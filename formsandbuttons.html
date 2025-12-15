@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+<form action="#" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password"><br><br>
+  <label>Gender:</label><br>
+  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female<br><br>
+  <label>Skills:</label><br>
+  <input type="checkbox" name="skills" value="html"> HTML
+  <input type="checkbox" name="skills" value="css"> CSS<br><br>
+  <label for="city">City:</label><br>
+  <select id="city" name="city">
+    <option value="">Select City</option>
+    <option value="hyd">Hyderabad</option>
+    <option value="blr">Bangalore</option>
+  </select><br><br>
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+  <button type="button">Cancel</button>
+</form>
+</body>
+</html>
