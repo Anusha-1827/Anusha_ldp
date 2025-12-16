@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Polu Anusha Reddy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Typing Animation */
+.typing-container {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #fff;
+  width: 0;
+  animation: typing 4s steps(20) infinite alternate,
+             blink 0.7s infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 330px; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Progress bar */
+.progress {
+  height: 8px;
+}
+
+.progress-bar {
+  background: #ffbd39;
+}
+
+/* Zoom effect */
+.zoom-effect img {
+  transition: transform 0.4s ease;
+}
+
+.zoom-effect img:hover {
+  transform: scale(1.1);
+}
+
+/* Section titles */
+.big {
+  font-size: 60px;
+  opacity: 0.1;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Anusha Reddy</a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+      <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" style="height:100vh; background:#000; display:flex; align-items:center;">
+  <div class="container text-white">
+    <div class="row align-items-center">
+
+      <!-- Text -->
+      <div class="col-md-7">
+        <h1>Hello!</h1>
+        <h2>I'm <span style="color:#ffbd39;">POLU ANUSHA REDDY</span></h2>
+        <div class="typing-container">COMPUTER SCIENCE STUDENT</div><br>
+
+        <a href="https://linkedin.com" class="btn btn-warning">LinkedIn</a>
+        <a href="https://github.com" class="btn btn-outline-light">GitHub</a>
+      </div>
+
+      <!-- Profile Image -->
+      <div class="col-md-5 text-center">
+        <img src="ASSETS/photo.jpeg" alt="width = 250px""height = 250px"
+             class="img-fluid rounded-circle"
+             style="width:250px; border:5px solid #ffbd39;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container py-5">
+  <h1 class="big">About</h1>
+  <h2>About Me</h2>
+
+  <p>
+    I am a Computer Science student at RGM College with a strong interest
+    in programming and web development.
+  </p>
+
+  <h4>Skills</h4>
+
+  <p>Python – 60%</p>
+  <div class="progress mb-3">
+    <div class="progress-bar" style="width:60%"></div>
+  </div>
+
+  <p>Java – 80%</p>
+  <div class="progress mb-3">
+    <div class="progress-bar" style="width:80%"></div>
+  </div>
+
+  <p>SQL – 90%</p>
+  <div class="progress">
+    <div class="progress-bar" style="width:90%"></div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="container py-5">
+  <h1 class="big">Resume</h1>
+  <h2>Education</h2>
+
+  <p><strong>B.Tech – Computer Science Engineering</strong><br>
+     RGM College, Nandyal<br>
+     Percentage: 80%</p>
+
+  <a href="https://drive.google.com" class="btn btn-warning">Download CV</a>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="container py-5">
+  <h1 class="big">Projects</h1>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card zoom-effect">
+        <img src="images/xor-project.png" class="card-img-top" alt="Project Image">
+        <div class="card-body">
+          <h5 class="card-title">Image Encryption & Decryption</h5>
+          <p class="card-text">
+            Image encryption and decryption using the XOR operator applies a secret key
+            to pixel values. Using the same key again restores the original image
+            since XOR is reversible.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container py-5 text-center">
+  <h1 class="big">Contact</h1>
+  <p>Email: anushareddyanki@gmail.com</p>
+  <p>Phone: +91 8328522173</p>
+  <p>Location: Nandyal, India</p>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+  © 2025 Anusha Reddy
+</footer>
+
+</body>
+</html>
